@@ -1,109 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parallax Horizontal</title>
-  <link rel="stylesheet" href="stylo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Horizontal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylo.css">
 </head>
+
 <body>
-  <header class="parallax-header">
-    
-   
-    <img class="fundo-header" src="fundo-header.jpg" alt="fundo-header">
+    <header class="parallax-header">
 
-    <div class="overlay"></div>
-     <h1>Mundo Animal</h1>
-     
-<a href="#leao">
-    <img src="leao.jpg" class="parallax-imagem leao" alt="Imagem 1">
-</a>
-<a href="#onca">
-    <img src="onca-pintada.jpg" class="parallax-imagem onca" alt="Imagem 2">
-</a>
-<a href="#gurila">
-    <img src="gurila.jpg" class="parallax-imagem gurila" alt="Imagem 3">
-    </a>
-<a href="#elefante">
-    <img src="26743232-do-africano-elefante-em-savana-as-por-do-sol-generativo-ai-foto.jpg" class="parallax-imagem elefante" alt="Imagem 4">
-</a>
-   
-  </header>
 
-  <main>
-  
-     <div class="content">
-      
-        <h1>Conteúdo sobre a imagem</h1>
-        <p>
-           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perferendis, saepe alias quod cupiditate aspernatur rerum! Sit officia assumenda corrupti at aspernatur velit magni, corporis dolorem maiores dolore odit iure.
-        </p>
-        <p>
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus amet necessitatibus, excepturi minima aliquid qui veritatis dignissimos quia ex labore expedita animi nihil corporis, beatae consectetur provident pariatur recusandae molestias!
-        </p>
-    </div>
+        <img class="fundo-header" src="fundo-header.jpg" alt="fundo-header">
 
-    <div class="parallax" id="leao">
-      
-    </div>
-    <div class="content">
-        <h2> conteúdo </h2>
-    </div>
+        <div class="overlay"></div>
 
- <div class="content">
-        <h1>Conteúdo sobre a imagem</h1>
-        <p>
-           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perferendis, saepe alias quod cupiditate aspernatur rerum! Sit officia assumenda corrupti at aspernatur velit magni, corporis dolorem maiores dolore odit iure.
-        </p>
-        <p>
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus amet necessitatibus, excepturi minima aliquid qui veritatis dignissimos quia ex labore expedita animi nihil corporis, beatae consectetur provident pariatur recusandae molestias!
-        </p>
-    </div>
-    <div class="parallax" id="onca" style="background-image: url(onca-pintada.jpg);">
-      
-    </div>
-  <div class="content">
-        <h2> conteúdo </h2>
-    </div>
-    <div class="content">
-      
-        <h1>Conteúdo sobre a imagem</h1>
-        <p>
-           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perferendis, saepe alias quod cupiditate aspernatur rerum! Sit officia assumenda corrupti at aspernatur velit magni, corporis dolorem maiores dolore odit iure.
-        </p>
-        <p>
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus amet necessitatibus, excepturi minima aliquid qui veritatis dignissimos quia ex labore expedita animi nihil corporis, beatae consectetur provident pariatur recusandae molestias!
-        </p>
-    </div>
+        <h1 id="titulo-header">Mundo Animal</h1>
 
-    <div class="parallax" id="gurila" style="background-image: url(gurila.jpg);">
-      
-    </div>
-    <div class="content">
-        <h2> conteúdo </h2>
-    </div>
 
-     <div class="content">
-      
-        <h1>Conteúdo sobre a imagem</h1>
-        <p>
-           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet perferendis, saepe alias quod cupiditate aspernatur rerum! Sit officia assumenda corrupti at aspernatur velit magni, corporis dolorem maiores dolore odit iure.
-        </p>
-        <p>
-           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus amet necessitatibus, excepturi minima aliquid qui veritatis dignissimos quia ex labore expedita animi nihil corporis, beatae consectetur provident pariatur recusandae molestias!
-        </p>
-    </div>
 
-    <div class="parallax" id="elefante" style="background-image: url(26743232-do-africano-elefante-em-savana-as-por-do-sol-generativo-ai-foto.jpg);">
-      
-    </div>
-    <div class="content">
-        <h2> conteúdo </h2>
-    </div>
+        <a href="#leao">
+            <img src="leao.jpg" class="parallax-imagem leao" alt="Imagem 1">
+        </a>
+        <a href="#onca">
+            <img src="onca-pintada.jpg" class="parallax-imagem onca" alt="Imagem 2">
+        </a>
+        <a href="#gurila">
+            <img src="gurila.jpg" class="parallax-imagem gurila" alt="Imagem 3">
+        </a>
+        <a href="#elefante">
+            <img src="26743232-do-africano-elefante-em-savana-as-por-do-sol-generativo-ai-foto.jpg"
+                class="parallax-imagem elefante" alt="Imagem 4">
+        </a>
 
-    
-  </main>
+    </header>
+    <main>
+        <div class="content" id="leao">
+            <h1> O Leão </h1>
 
-  <script src="script.js"></script>
+            <p>
+
+                O leão é um dos animais mais fortes da selva e é conhecido como o rei da selva. Ele tem uma grande juba
+                ao redor da cabeça, que o diferencia da leoa. O leão é grande, forte e protege o seu grupo, chamado de
+                alcateia.
+
+                Enquanto as leoas caçam, o leão cuida do território e afasta os inimigos com seu rugido poderoso. Ele
+                também ajuda a proteger os filhotes. Durante o dia, o leão gosta de descansar e pode dormir por muitas
+                horas.
+            </p>
+
+        </div>
+        <div class="parallax" style="background-image: url(leao.jpg);">
+        </div>
+
+        <div class="content" id="onca">
+            <h1> A Onça Pintada</h1>
+            <p>
+                A onça é um dos animais mais fortes e rápidos da selva. Ela tem o corpo musculoso, pelagem amarela com
+                pintas pretas e é muito boa em se esconder na mata.
+
+                A onça caça sozinha, geralmente à noite, e se alimenta de vários animais, como capivaras, veados e até
+                jacarés. Ela é uma excelente nadadora e também sobe em árvores com facilidade.
+
+                Silenciosa e poderosa, a onça é símbolo de agilidade, força e mistério na natureza.
+            </p>
+
+        </div>
+        <div class="parallax" style="background-image: url(onca-pintada.jpg);">
+        </div>
+        <div class="content">
+
+            <h1>Gorila</h1>
+            <p>
+                O gorila é o maior de todos os macacos e vive nas florestas tropicais. Ele tem o corpo forte, é coberto
+                de pelos escuros e anda apoiando as mãos no chão.
+
+                Apesar de parecer bravo, o gorila é calmo e vive em grupo com sua família. O macho dominante, chamado de
+                costas-prateadas, lidera e protege todos.
+
+                O gorila se alimenta de frutas, folhas e raízes, e passa boa parte do dia descansando ou cuidando dos
+                filhotes.
+
+                Ele é símbolo de força, inteligência e união na selva.
+            </p>
+        </div>
+
+        <div class="parallax" id="gurila" style="background-image: url(gurila.jpg);">
+
+        </div>
+        <div class="content">
+
+            <h1>Elefante</h1>
+            <p>
+                O elefante é o maior animal terrestre do mundo. Ele tem o corpo enorme, grandes orelhas, presas de
+                marfim e uma longa tromba, que usa para beber água, pegar comida e se comunicar.
+
+                Mesmo sendo tão grande, o elefante é calmo e vive em grupo, liderado por uma fêmea mais velha. Ele gosta
+                de caminhar longas distâncias e se alimenta de folhas, frutas e galhos.
+
+                O elefante é símbolo de sabedoria, força e memória na natureza.
+            </p>
+
+        </div>
+
+        <div class="parallax" id="elefante"
+            style="background-image: url(26743232-do-africano-elefante-em-savana-as-por-do-sol-generativo-ai-foto.jpg);">
+        </div>
+    </main>
+<footer>
+ <div class="footer-bottom">
+    <p>© 2025 Luciclei Oliveira. Todos os direitos reservados.</p>
+  </div>
+</footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
