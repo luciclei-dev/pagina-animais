@@ -14,22 +14,14 @@ body, html {
   
   
 }
-/*.fundo-header{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
- 
-}*/
+
 .overlay{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.479);
+  background: rgba(53, 53, 53, 0.479);
   z-index: 1;
 }
 #titulo-header{
@@ -69,9 +61,10 @@ body, html {
 
 main {
   position: relative;
+  width: 100%;
   z-index: 4; 
   margin-top: 100vh; 
-  background-color: rgb(224, 233, 228);
+ 
 }
 
 .fundo-header {
@@ -99,7 +92,9 @@ main {
 }
 .parallax-imagem:hover{
    position: absolute;
-  box-shadow: 0px 0px 20px green;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
+ 
 }
 .leao { left: 20%; z-index: 2;}
 .onca { left: 40%; z-index: 2;}
@@ -113,11 +108,12 @@ html {
 }
 
   .parallax{
-        height: 500px;
+        height: 750px;
+        width: 100%;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -136,7 +132,7 @@ html {
       display: flex;
       flex-direction: column;
       align-items: center;
-      box-shadow: 0px 1px 1px rgb(67, 71, 67);
+      background: linear-gradient(rgb(238, 242, 238), rgb(183, 222, 207));
     }
     p{
      margin-top: 10px;
@@ -157,3 +153,106 @@ html {
   position: relative;
   z-index: 2;
     }
+.btn-voltar-topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #2e7d32; /* verde escuro */
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 999;
+}
+
+.btn-voltar-topo:hover {
+  background-color: #4caf50; /* verde claro */
+  transform: scale(1.1);
+}
+
+/* ============================
+   RESPONSIVIDADE GERAL
+   ============================ */
+
+@media (max-width: 1024px) {
+  #titulo-header {
+    font-size: 3.5rem;
+  }
+
+  .parallax-imagem {
+    width: 120px;
+    height: 120px;
+    top: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  #titulo-header {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .parallax-imagem {
+    width: 90px;
+    height: 90px;
+    top: 80%;
+    opacity: 0.95;
+  }
+
+  .leao { left: 20%; }
+  .onca { left: 40%; }
+  .gurila { left: 60%; }
+  .elefante { left: 80%; }
+  
+  .content {
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.6rem;
+    padding: 0 10px;
+  }
+
+  .parallax {
+    height: 400px;
+    background-size: cover;
+  }
+
+  .btn-voltar-topo {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 1.6rem;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax-imagem {
+    width: 70px;
+    height: 70px;
+    top: 82%;
+  }
+
+  #titulo-header {
+    font-size: 2rem;
+  }
+
+  .btn-voltar-topo {
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+    line-height: 40px;
+  }
+}
