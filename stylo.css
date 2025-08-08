@@ -149,7 +149,7 @@ html {
     }
 
     footer{
-       background: #75dab1;
+       background: #bbe9d7;
   width: 100%;
   height: 150px;
   border: 1px solid green;
@@ -158,7 +158,7 @@ html {
   align-items: center;
   position: relative;
   z-index: 2;
-  color: white;
+  color: rgb(65, 63, 63);
   
     }
 .btn-voltar-topo {
@@ -284,3 +284,4 @@ html {
     line-height: 40px;
   }
 }
+
